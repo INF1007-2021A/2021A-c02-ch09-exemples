@@ -4,8 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ef2822ae-f944-4c2b-9e64-2ddb9e3742c7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>code_to_test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -32,6 +31,7 @@
     <Compile Include="logging_ex.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="tests_ex.py" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

@@ -16,6 +16,7 @@ def prime_factors(num):
 
 def read_int_from_stdin():
 	input_line = input("Entrez un nombre entier positif supérieur à 3 : ")
+	logging.debug(f"Entered '{input_line}'")
 	num = int(input_line)
 	if num <= 3:
 		raise ValueError()
@@ -29,6 +30,7 @@ def main():
 		datefmt="%Y-%m-%d %H:%M:%S",
 		level=logging.DEBUG
 	)
+
 	while True:
 		try:
 			num, input_line = read_int_from_stdin()
@@ -41,8 +43,6 @@ def main():
 		else:
 			print("Ok c'est beau on continue...")
 			break
-		finally:
-			logging.debug(f"Entered '{input_line}'")
 
 	print("Les facteurs premiers sont : ", end="")
 	for fac in prime_factors(num):
