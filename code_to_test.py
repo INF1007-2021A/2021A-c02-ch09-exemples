@@ -33,9 +33,13 @@ def prime_factors(num) -> Iterator[int]:
 
 def fibonacci_numbers(length) -> Iterator[int]:
 	"""
-	Génère les nombres de Fibonacci jusqu'à un index donné.
+	Génère les nombres de Fibonacci jusqu'à un nombre d'éléments donné.
 
-	:param length: Longueur de la suite à générer.
+	:raises TypeError: Si la longueur n'est pas un entier (int).
+
+	:raises ValueError: Si la longueur est négative.
+
+	:param length: Longueur de la suite à générer (doit être un entier >= 0).
 	"""
 
 	if not isinstance(length, int):
